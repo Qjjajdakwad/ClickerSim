@@ -1,0 +1,187 @@
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("ImageLabel")
+local TextLabel_Roundify_6px = Instance.new("ImageLabel")
+local TextLabel = Instance.new("TextLabel")
+local Gamepass = Instance.new("TextButton")
+local WalkSpeed = Instance.new("TextButton")
+local Jump_Power = Instance.new("TextButton")
+local Rebirths = Instance.new("TextButton")
+local Clicker = Instance.new("TextButton")
+local ImageLabel = Instance.new("ImageLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local Code = Instance.new("TextButton")
+ 
+--Properties:
+ 
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ 
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main.BackgroundTransparency = 1.000
+Main.Position = UDim2.new(0.334113985, 0, 0.252631605, 0)
+Main.Size = UDim2.new(0, 490, 0, 289)
+Main.Image = "rbxassetid://3570695787"
+Main.ImageColor3 = Color3.fromRGB(43, 42, 42)
+Main.ScaleType = Enum.ScaleType.Slice
+Main.SliceCenter = Rect.new(100, 100, 100, 100)
+Main.SliceScale = 0.120
+ 
+TextLabel_Roundify_6px.Name = "TextLabel_Roundify_6px"
+TextLabel_Roundify_6px.Parent = Main
+TextLabel_Roundify_6px.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_Roundify_6px.BackgroundColor3 = Color3.fromRGB(255, 255, 127)
+TextLabel_Roundify_6px.BackgroundTransparency = 1.000
+TextLabel_Roundify_6px.Position = UDim2.new(0.490133494, 0, 0.0605536327, 0)
+TextLabel_Roundify_6px.Size = UDim2.new(0.851020396, 0, 0.121107265, 0)
+TextLabel_Roundify_6px.Image = "rbxassetid://3570695787"
+TextLabel_Roundify_6px.ImageColor3 = Color3.fromRGB(255, 251, 117)
+TextLabel_Roundify_6px.ScaleType = Enum.ScaleType.Slice
+TextLabel_Roundify_6px.SliceCenter = Rect.new(100, 100, 100, 100)
+TextLabel_Roundify_6px.SliceScale = 0.060
+ 
+TextLabel.Parent = TextLabel_Roundify_6px
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.18571429, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 257, 0, 34)
+TextLabel.Font = Enum.Font.SciFi
+TextLabel.Text = "Sintax X"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 14.000
+ 
+Gamepass.Name = "Gamepass"
+Gamepass.Parent = Main
+Gamepass.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+Gamepass.Position = UDim2.new(-0.000579956919, 0, 0.200724453, 0)
+Gamepass.Size = UDim2.new(0, 190, 0, 27)
+Gamepass.Font = Enum.Font.SourceSans
+Gamepass.Text = "Unlock_Gamepass"
+Gamepass.TextColor3 = Color3.fromRGB(255, 255, 255)
+Gamepass.TextSize = 14.000
+Gamepass.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Gamepass.MouseButton1Down:connect(function()
+for i,v in pairs(game.Players.LocalPlayer.Boosts:GetDescendants()) do
+   if v.Name == "isActive" then
+       v.Value = true
+   end
+end
+end)
+ 
+WalkSpeed.Name = "WalkSpeed"
+WalkSpeed.Parent = Main
+WalkSpeed.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+WalkSpeed.Position = UDim2.new(-0.000579956919, 0, 0.356433809, 0)
+WalkSpeed.Size = UDim2.new(0, 190, 0, 27)
+WalkSpeed.Font = Enum.Font.SourceSans
+WalkSpeed.Text = "WalkSpeed"
+WalkSpeed.TextColor3 = Color3.fromRGB(255, 247, 246)
+WalkSpeed.TextSize = 14.000
+WalkSpeed.MouseButton1Down:connect(function()
+    while wait(0.01) do
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 175
+end
+end)
+ 
+Jump_Power.Name = "Jump_Power"
+Jump_Power.Parent = Main
+Jump_Power.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+Jump_Power.Position = UDim2.new(-0.000579956919, 0, 0.505222738, 0)
+Jump_Power.Size = UDim2.new(0, 190, 0, 27)
+Jump_Power.Font = Enum.Font.SourceSans
+Jump_Power.Text = "JumpPower"
+Jump_Power.TextColor3 = Color3.fromRGB(255, 247, 246)
+Jump_Power.TextSize = 14.000
+Jump_Power.MouseButton1Down:connect(function()
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = 250
+end)
+ 
+ 
+Rebirths.Name = "Rebirths"
+Rebirths.Parent = Main
+Rebirths.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+Rebirths.Position = UDim2.new(-0.000579956919, 0, 0.647091269, 0)
+Rebirths.Size = UDim2.new(0, 190, 0, 27)
+Rebirths.Font = Enum.Font.SourceSans
+Rebirths.Text = "AutoRebirths 375Qi"
+Rebirths.TextColor3 = Color3.fromRGB(255, 247, 246)
+Rebirths.TextSize = 14.000
+Rebirths.MouseButton1Down:connect(function()
+ while wait(0.01) do
+ local A_1 = 375000000000000000000
+local A_2 = false
+local A_3 = false
+local Event = game:GetService("ReplicatedStorage").Events.Client.requestRebirth
+Event:FireServer(A_1, A_2, A_3)
+end
+end)
+ 
+Clicker.Name = "Clicker"
+Clicker.Parent = Main
+Clicker.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+Clicker.Position = UDim2.new(-0.000579956919, 0, 0.79241997, 0)
+Clicker.Size = UDim2.new(0, 190, 0, 27)
+Clicker.Font = Enum.Font.SourceSans
+Clicker.Text = "AutoClicker"
+Clicker.TextColor3 = Color3.fromRGB(255, 247, 246)
+Clicker.TextSize = 14.000
+ 
+ Clicker.MouseButton1Down:connect(function()
+while wait(0.01) do
+local Event = game:GetService("ReplicatedStorage").Events.Client.emitClicks
+Event:FireServer()
+ 
+local A_1 = 
+{
+    ["manual"] = 
+{
+    ["3.916717272756941e+41"] = 1
+}
+}
+local Event = game:GetService("ReplicatedStorage").Clickerr
+Event:InvokeServer(A_1)
+end
+end)
+ 
+ImageLabel.Parent = Main
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.Position = UDim2.new(0.449369848, 0, 0.199360564, 0)
+ImageLabel.Size = UDim2.new(0, 248, 0, 146)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=387169019"
+ 
+TextLabel_2.Parent = Main
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(43, 42, 42)
+TextLabel_2.Position = UDim2.new(0.295706481, 0, 0.956862748, 0)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 12)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Create Qwart"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 14.000
+ 
+Code.Name = "Code"
+Code.Parent = Main
+Code.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+Code.Position = UDim2.new(0.448399633, 0, 0.79241997, 0)
+Code.Size = UDim2.new(0, 248, 0, 27)
+Code.Font = Enum.Font.SourceSans
+Code.Text = "Use_ALL Code"
+Code.TextColor3 = Color3.fromRGB(255, 247, 246)
+Code.TextSize = 14.000
+ 
+-- Scripts:
+ 
+local function YJMXOD_fake_script() -- ScreenGui.Script 
+    local script = Instance.new('Script', ScreenGui)
+ 
+    
+    frame = script.Parent.Main
+    frame.Draggable = true
+    frame.Active = true
+    frame.Selectable = true
+end
+coroutine.wrap(YJMXOD_fake_script)()
+ while wait(5) do
+    local Event = game:GetService("ReplicatedStorage").Events.Client.collectGifts
+Event:FireServer()
+end
