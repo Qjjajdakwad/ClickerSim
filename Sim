@@ -100,16 +100,9 @@ Jump_Power.Text = "JumpPower"
 Jump_Power.TextColor3 = Color3.fromRGB(255, 247, 246)
 Jump_Power.TextSize = 14.000
 Jump_Power.MouseButton1Down:connect(function()
-if	getgenv().toggle == false
-	then getgenv().toggle = true
-while getgenv().toggle == true and wait() do
-	 game.Players.LocalPlayer.Character.Humanoid.JumpPower = 450
-	 end
-	else  getgenv().toggle = false
-		while getgenv().toggle == false and wait() do
-	 game.Players.LocalPlayer.Character.Humanoid.JumpPower = 80
-	 end
-	 end
+if game.Players.LocalPlayer.Character.Humanoid.JumpPower == 80
+then game.Players.LocalPlayer.Character.Humanoid.JumpPower = 400
+else game.Players.LocalPlayer.Character.Humanoid.JumpPower = 80
  
  
 Rebirths.Name = "Rebirths"
