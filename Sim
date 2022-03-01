@@ -1,32 +1,130 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
 local ScreenGui = Instance.new("ScreenGui")
 local Main = Instance.new("ImageLabel")
 local TextLabel_Roundify_6px = Instance.new("ImageLabel")
 local TextLabel = Instance.new("TextLabel")
-local Gamepass = Instance.new("TextButton")
 local WalkSpeed = Instance.new("TextButton")
 local Jump_Power = Instance.new("TextButton")
 local Rebirths = Instance.new("TextButton")
-local Clicker = Instance.new("TextButton")
+local Misc = Instance.new("TextButton")
 local ImageLabel = Instance.new("ImageLabel")
 local TextLabel_2 = Instance.new("TextLabel")
 local Code = Instance.new("TextButton")
- 
+local RGB = Instance.new("Frame")
+local Gamepass = Instance.new("TextButton")
+local GamepassMenu = Instance.new("ImageLabel")
+local TextLabel_Roundify_6px_2 = Instance.new("ImageLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local RGB_2 = Instance.new("Frame")
+local DoubleClickstext = Instance.new("TextLabel")
+local DoubleGemstext = Instance.new("TextLabel")
+local DoubleLuckyUnlocktext = Instance.new("TextLabel")
+local FastAutoClickUnlocktext = Instance.new("TextLabel")
+local DoubleShinyUnlocktext = Instance.new("TextLabel")
+local AutoOpentext = Instance.new("TextLabel")
+local Dgems = Instance.new("TextButton")
+local DClick = Instance.new("TextButton")
+local DLucky = Instance.new("TextButton")
+local FastClick = Instance.new("TextButton")
+local Dshiny = Instance.new("TextButton")
+local AutoOpen = Instance.new("TextButton")
+local Unlockall = Instance.new("TextButton")
+local Back = Instance.new("TextButton")
+local RebirthsMenu = Instance.new("ImageLabel")
+local TextLabel_Roundify_6px_3 = Instance.new("ImageLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+local TextLabel_6 = Instance.new("TextLabel")
+local RGB_3 = Instance.new("Frame")
+local Rebirths1 = Instance.new("TextButton")
+local Rebirths5 = Instance.new("TextButton")
+local Rebirths10 = Instance.new("TextButton")
+local Rebirths50 = Instance.new("TextButton")
+local Rebirths1k = Instance.new("TextButton")
+local Rebirths5k = Instance.new("TextButton")
+local Rebirths25k = Instance.new("TextButton")
+local Rebirths250 = Instance.new("TextButton")
+local Rebirths125k = Instance.new("TextButton")
+local Rebirths500k = Instance.new("TextButton")
+local Rebirths3M = Instance.new("TextButton")
+local Rebirth35T = Instance.new("TextButton")
+local Rebirths75Qi = Instance.new("TextButton")
+local Rebirths375Qi = Instance.new("TextButton")
+local Rebirths15M = Instance.new("TextButton")
+local Rebirths50M = Instance.new("TextButton")
+local Rebirths250M = Instance.new("TextButton")
+local Rebirths1B = Instance.new("TextButton")
+local Rebirths5B = Instance.new("TextButton")
+local Rebirths25B = Instance.new("TextButton")
+local Rebirths50B = Instance.new("TextButton")
+local Rebirths150B = Instance.new("TextButton")
+local Rebirths750B = Instance.new("TextButton")
+local Rebirth20T = Instance.new("TextButton")
+local Rebirth100T = Instance.new("TextButton")
+local Rebirth500T = Instance.new("TextButton")
+local Rebirth25Qa = Instance.new("TextButton")
+local Rebirth15Qa = Instance.new("TextButton")
+local Rebirth75Qa = Instance.new("TextButton")
+local Rebirth375Qa = Instance.new("TextButton")
+local Rebirth25Qi = Instance.new("TextButton")
+local Rebirth15Qi = Instance.new("TextButton")
+local Back_2 = Instance.new("TextButton")
+local MiscMenu = Instance.new("ImageLabel")
+local TextLabel_Roundify_6px_4 = Instance.new("ImageLabel")
+local TextLabel_7 = Instance.new("TextLabel")
+local TextLabel_8 = Instance.new("TextLabel")
+local RGB_4 = Instance.new("Frame")
+local Back_3 = Instance.new("TextButton")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local SkyIsland = Instance.new("TextButton")
+local IceIsland = Instance.new("TextButton")
+local LavaIsland = Instance.new("TextButton")
+local PirateIsland = Instance.new("TextButton")
+local SpaceIsland = Instance.new("TextButton")
+local ForestIsland = Instance.new("TextButton")
+local CandyLandIsland = Instance.new("TextButton")
+local AtlantisIsland = Instance.new("TextButton")
+local TropicalIsland = Instance.new("TextButton")
+local BeeIsland = Instance.new("TextButton")
+local GalaxyIsland = Instance.new("TextButton")
+local UneversalIsland = Instance.new("TextButton")
+local RobotIsland = Instance.new("TextButton")
+local ChemicalIsland = Instance.new("TextButton")
+local SteampunkIsland = Instance.new("TextButton")
+local HolographicIsland = Instance.new("TextButton")
+local TpIsland = Instance.new("TextButton")
+local Allisland = Instance.new("TextButton")
+local OpenBank = Instance.new("TextButton")
+local Openpotions = Instance.new("TextButton")
+local infJump = Instance.new("TextButton")
+local AutoCliker = Instance.new("TextLabel")
+local AutoCliker_2 = Instance.new("TextButton")
+local Claimallrewards = Instance.new("TextButton")
+local AutoCollectgift = Instance.new("TextLabel")
+local AutoCollectgift_2 = Instance.new("TextButton")
+local AntiAFK = Instance.new("TextButton")
+
 --Properties:
- 
+
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
- 
+ScreenGui.ResetOnSpawn = false
+
 Main.Name = "Main"
 Main.Parent = ScreenGui
 Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Main.BackgroundTransparency = 1.000
-Main.Position = UDim2.new(0.334113985, 0, 0.252631605, 0)
+Main.Position = UDim2.new(0.335675269, 0, 0.258479565, 0)
 Main.Size = UDim2.new(0, 490, 0, 289)
 Main.Image = "rbxassetid://3570695787"
 Main.ImageColor3 = Color3.fromRGB(43, 42, 42)
 Main.ScaleType = Enum.ScaleType.Slice
 Main.SliceCenter = Rect.new(100, 100, 100, 100)
 Main.SliceScale = 0.120
- 
+
 TextLabel_Roundify_6px.Name = "TextLabel_Roundify_6px"
 TextLabel_Roundify_6px.Parent = Main
 TextLabel_Roundify_6px.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -39,7 +137,7 @@ TextLabel_Roundify_6px.ImageColor3 = Color3.fromRGB(255, 251, 117)
 TextLabel_Roundify_6px.ScaleType = Enum.ScaleType.Slice
 TextLabel_Roundify_6px.SliceCenter = Rect.new(100, 100, 100, 100)
 TextLabel_Roundify_6px.SliceScale = 0.060
- 
+
 TextLabel.Parent = TextLabel_Roundify_6px
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.BackgroundTransparency = 1.000
@@ -50,25 +148,7 @@ TextLabel.Font = Enum.Font.SciFi
 TextLabel.Text = "Sintax X"
 TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.TextSize = 14.000
- 
-Gamepass.Name = "Gamepass"
-Gamepass.Parent = Main
-Gamepass.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
-Gamepass.Position = UDim2.new(-0.000579956919, 0, 0.200724453, 0)
-Gamepass.Size = UDim2.new(0, 190, 0, 27)
-Gamepass.Font = Enum.Font.SourceSans
-Gamepass.Text = "Unlock_Gamepass"
-Gamepass.TextColor3 = Color3.fromRGB(255, 255, 255)
-Gamepass.TextSize = 14.000
-Gamepass.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-Gamepass.MouseButton1Down:connect(function()
-for i,v in pairs(game.Players.LocalPlayer.Boosts:GetDescendants()) do
-   if v.Name == "isActive" then
-       v.Value = true
-   end
-end
-end)
- 
+
 WalkSpeed.Name = "WalkSpeed"
 WalkSpeed.Parent = Main
 WalkSpeed.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
@@ -79,17 +159,22 @@ WalkSpeed.Text = "WalkSpeed"
 WalkSpeed.TextColor3 = Color3.fromRGB(255, 247, 246)
 WalkSpeed.TextSize = 14.000
 WalkSpeed.MouseButton1Down:connect(function()
-if	getgenv().toggle == false
-	then getgenv().toggle = true
+    if  getgenv().toggle == false
+    then getgenv().toggle = true
+            WalkSpeed.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+    WalkSpeed.TextColor3 = Color3.fromRGB(0, 0, 0)
 while getgenv().toggle == true and wait() do
-	 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 175
-	 end
-	else  getgenv().toggle = false
-		while getgenv().toggle == false and wait() do
-	 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 22
-	 end
-	 end
- 
+     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 175
+     end
+    else  getgenv().toggle = false
+        WalkSpeed.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+    WalkSpeed.TextColor3 = Color3.fromRGB(255, 247, 246)
+        while getgenv().toggle == false and wait() do
+     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 22
+     end
+     end
+     end)
+
 Jump_Power.Name = "Jump_Power"
 Jump_Power.Parent = Main
 Jump_Power.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
@@ -101,62 +186,50 @@ Jump_Power.TextColor3 = Color3.fromRGB(255, 247, 246)
 Jump_Power.TextSize = 14.000
 Jump_Power.MouseButton1Down:connect(function()
 if game.Players.LocalPlayer.Character.Humanoid.JumpPower == 80
-then game.Players.LocalPlayer.Character.Humanoid.JumpPower = 400
-else game.Players.LocalPlayer.Character.Humanoid.JumpPower = 80
- 
- 
+ then game.Players.LocalPlayer.Character.Humanoid.JumpPower = 350
+    Jump_Power.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+    Jump_Power.TextColor3 = Color3.fromRGB(0, 0, 0)
+ else game.Players.LocalPlayer.Character.Humanoid.JumpPower = 80
+Jump_Power.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+    Jump_Power.TextColor3 = Color3.fromRGB(255, 247, 246)
+ end
+end)
+
+
 Rebirths.Name = "Rebirths"
 Rebirths.Parent = Main
 Rebirths.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
 Rebirths.Position = UDim2.new(-0.000579956919, 0, 0.647091269, 0)
 Rebirths.Size = UDim2.new(0, 190, 0, 27)
 Rebirths.Font = Enum.Font.SourceSans
-Rebirths.Text = "AutoRebirths 375Qi"
+Rebirths.Text = "Rebirths"
 Rebirths.TextColor3 = Color3.fromRGB(255, 247, 246)
 Rebirths.TextSize = 14.000
 Rebirths.MouseButton1Down:connect(function()
- while wait(0.01) do
- local A_1 = 375000000000000000000
-local A_2 = false
-local A_3 = false
-local Event = game:GetService("ReplicatedStorage").Events.Client.requestRebirth
-Event:FireServer(A_1, A_2, A_3)
-end
+RebirthsMenu.Visible = true
+Main.Visible = false
 end)
- 
-Clicker.Name = "Clicker"
-Clicker.Parent = Main
-Clicker.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
-Clicker.Position = UDim2.new(-0.000579956919, 0, 0.79241997, 0)
-Clicker.Size = UDim2.new(0, 190, 0, 27)
-Clicker.Font = Enum.Font.SourceSans
-Clicker.Text = "AutoClicker"
-Clicker.TextColor3 = Color3.fromRGB(255, 247, 246)
-Clicker.TextSize = 14.000
- 
- Clicker.MouseButton1Down:connect(function()
-while wait(0.01) do
-local Event = game:GetService("ReplicatedStorage").Events.Client.emitClicks
-Event:FireServer()
- 
-local A_1 = 
-{
-    ["manual"] = 
-{
-    ["3.916717272756941e+41"] = 1
-}
-}
-local Event = game:GetService("ReplicatedStorage").Clickerr
-Event:InvokeServer(A_1)
-end
+
+Misc.Name = "Misc"
+Misc.Parent = Main
+Misc.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+Misc.Position = UDim2.new(-0.000579956919, 0, 0.79241997, 0)
+Misc.Size = UDim2.new(0, 190, 0, 27)
+Misc.Font = Enum.Font.SourceSans
+Misc.Text = "Misc"
+Misc.TextColor3 = Color3.fromRGB(255, 247, 246)
+Misc.TextSize = 14.000
+Misc.MouseButton1Down:connect(function()
+    MiscMenu.Visible = true
+    Main.Visible = false
 end)
- 
+
 ImageLabel.Parent = Main
 ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ImageLabel.Position = UDim2.new(0.449369848, 0, 0.199360564, 0)
 ImageLabel.Size = UDim2.new(0, 248, 0, 146)
 ImageLabel.Image = "http://www.roblox.com/asset/?id=387169019"
- 
+
 TextLabel_2.Parent = Main
 TextLabel_2.BackgroundColor3 = Color3.fromRGB(43, 42, 42)
 TextLabel_2.Position = UDim2.new(0.295706481, 0, 0.956862748, 0)
@@ -165,7 +238,7 @@ TextLabel_2.Font = Enum.Font.SourceSans
 TextLabel_2.Text = "Create Qwart"
 TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.TextSize = 14.000
- 
+
 Code.Name = "Code"
 Code.Parent = Main
 Code.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
@@ -175,20 +248,1062 @@ Code.Font = Enum.Font.SourceSans
 Code.Text = "Use_ALL Code"
 Code.TextColor3 = Color3.fromRGB(255, 247, 246)
 Code.TextSize = 14.000
- 
+
+RGB.Name = "RGB"
+RGB.Parent = Main
+RGB.BackgroundColor3 = Color3.fromRGB(255, 24, 27)
+RGB.Position = UDim2.new(-0.000579958549, 0, 0.920055032, 0)
+RGB.Size = UDim2.new(0, 489, 0, 3)
+
+Gamepass.Name = "Gamepass"
+Gamepass.Parent = Main
+Gamepass.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+Gamepass.Position = UDim2.new(-0.000579956919, 0, 0.200724453, 0)
+Gamepass.Size = UDim2.new(0, 190, 0, 27)
+Gamepass.Font = Enum.Font.SourceSans
+Gamepass.Text = "Gamepass"
+Gamepass.TextColor3 = Color3.fromRGB(255, 255, 255)
+Gamepass.TextSize = 14.000
+Gamepass.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Gamepass.MouseButton1Down:connect(function()
+    GamepassMenu.Visible = true
+    Main.Visible = false
+end)
+
+GamepassMenu.Name = "GamepassMenu"
+GamepassMenu.Parent = ScreenGui
+GamepassMenu.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GamepassMenu.BackgroundTransparency = 1.000
+GamepassMenu.BorderColor3 = Color3.fromRGB(27, 42, 53)
+GamepassMenu.Position = UDim2.new(0.329439908, 0, 0.258479565, 0)
+GamepassMenu.Size = UDim2.new(0, 490, 0, 289)
+GamepassMenu.Visible = false
+GamepassMenu.Image = "rbxassetid://3570695787"
+GamepassMenu.ImageColor3 = Color3.fromRGB(43, 42, 42)
+GamepassMenu.ScaleType = Enum.ScaleType.Slice
+GamepassMenu.SliceCenter = Rect.new(100, 100, 100, 100)
+GamepassMenu.SliceScale = 0.120
+
+TextLabel_Roundify_6px_2.Name = "TextLabel_Roundify_6px"
+TextLabel_Roundify_6px_2.Parent = GamepassMenu
+TextLabel_Roundify_6px_2.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_Roundify_6px_2.BackgroundColor3 = Color3.fromRGB(255, 255, 127)
+TextLabel_Roundify_6px_2.BackgroundTransparency = 1.000
+TextLabel_Roundify_6px_2.Position = UDim2.new(0.490133494, 0, 0.0605536327, 0)
+TextLabel_Roundify_6px_2.Size = UDim2.new(0.851020396, 0, 0.121107265, 0)
+TextLabel_Roundify_6px_2.Image = "rbxassetid://3570695787"
+TextLabel_Roundify_6px_2.ImageColor3 = Color3.fromRGB(255, 251, 117)
+TextLabel_Roundify_6px_2.ScaleType = Enum.ScaleType.Slice
+TextLabel_Roundify_6px_2.SliceCenter = Rect.new(100, 100, 100, 100)
+TextLabel_Roundify_6px_2.SliceScale = 0.060
+
+TextLabel_3.Parent = TextLabel_Roundify_6px_2
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.18571429, 0, 0, 0)
+TextLabel_3.Size = UDim2.new(0, 257, 0, 34)
+TextLabel_3.Font = Enum.Font.SciFi
+TextLabel_3.Text = "Sintax X"
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.TextSize = 14.000
+
+TextLabel_4.Parent = GamepassMenu
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(43, 42, 42)
+TextLabel_4.Position = UDim2.new(0.295706481, 0, 0.956862748, 0)
+TextLabel_4.Size = UDim2.new(0, 200, 0, 12)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = "Create Qwart"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextSize = 14.000
+
+RGB_2.Name = "RGB"
+RGB_2.Parent = GamepassMenu
+RGB_2.BackgroundColor3 = Color3.fromRGB(255, 24, 27)
+RGB_2.Position = UDim2.new(-0.000579958549, 0, 0.920055032, 0)
+RGB_2.Size = UDim2.new(0, 489, 0, 3)
+
+DoubleClickstext.Name = "DoubleClicks text"
+DoubleClickstext.Parent = GamepassMenu
+DoubleClickstext.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+DoubleClickstext.Position = UDim2.new(-0.00175532128, 0, 0.285865784, 0)
+DoubleClickstext.Size = UDim2.new(0, 200, 0, 19)
+DoubleClickstext.Font = Enum.Font.SourceSans
+DoubleClickstext.Text = "DoubleClick Unlock"
+DoubleClickstext.TextColor3 = Color3.fromRGB(255, 255, 255)
+DoubleClickstext.TextSize = 14.000
+
+DoubleGemstext.Name = "DoubleGems text"
+DoubleGemstext.Parent = GamepassMenu
+DoubleGemstext.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+DoubleGemstext.Position = UDim2.new(-0.00175532128, 0, 0.192440152, 0)
+DoubleGemstext.Size = UDim2.new(0, 200, 0, 20)
+DoubleGemstext.Font = Enum.Font.SourceSans
+DoubleGemstext.Text = "DoubleGems Unlock"
+DoubleGemstext.TextColor3 = Color3.fromRGB(255, 255, 255)
+DoubleGemstext.TextSize = 14.000
+
+DoubleLuckyUnlocktext.Name = "DoubleLucky Unlock text"
+DoubleLuckyUnlocktext.Parent = GamepassMenu
+DoubleLuckyUnlocktext.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+DoubleLuckyUnlocktext.Position = UDim2.new(-0.00175532128, 0, 0.372370929, 0)
+DoubleLuckyUnlocktext.Size = UDim2.new(0, 200, 0, 19)
+DoubleLuckyUnlocktext.Font = Enum.Font.SourceSans
+DoubleLuckyUnlocktext.Text = "DoubleLucky Unlock"
+DoubleLuckyUnlocktext.TextColor3 = Color3.fromRGB(255, 255, 255)
+DoubleLuckyUnlocktext.TextSize = 14.000
+
+FastAutoClickUnlocktext.Name = "FastAutoClick Unlock text"
+FastAutoClickUnlocktext.Parent = GamepassMenu
+FastAutoClickUnlocktext.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+FastAutoClickUnlocktext.Position = UDim2.new(-0.00175532128, 0, 0.46579656, 0)
+FastAutoClickUnlocktext.Size = UDim2.new(0, 200, 0, 18)
+FastAutoClickUnlocktext.Font = Enum.Font.SourceSans
+FastAutoClickUnlocktext.Text = "FastAutoClick Unlock"
+FastAutoClickUnlocktext.TextColor3 = Color3.fromRGB(255, 255, 255)
+FastAutoClickUnlocktext.TextSize = 14.000
+
+DoubleShinyUnlocktext.Name = "DoubleShiny Unlock text"
+DoubleShinyUnlocktext.Parent = GamepassMenu
+DoubleShinyUnlocktext.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+DoubleShinyUnlocktext.Position = UDim2.new(-0.00175532699, 0, 0.548841536, 0)
+DoubleShinyUnlocktext.Size = UDim2.new(0, 200, 0, 18)
+DoubleShinyUnlocktext.Font = Enum.Font.SourceSans
+DoubleShinyUnlocktext.Text = "DoubleShiny Unlock"
+DoubleShinyUnlocktext.TextColor3 = Color3.fromRGB(255, 255, 255)
+DoubleShinyUnlocktext.TextSize = 14.000
+
+AutoOpentext.Name = "AutoOpen text"
+AutoOpentext.Parent = GamepassMenu
+AutoOpentext.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+AutoOpentext.Position = UDim2.new(-0.0017553214, 0, 0.631886482, 0)
+AutoOpentext.Size = UDim2.new(0, 200, 0, 18)
+AutoOpentext.Font = Enum.Font.SourceSans
+AutoOpentext.Text = "Auto Open Unlock"
+AutoOpentext.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoOpentext.TextSize = 14.000
+
+Dgems.Name = "Dgems"
+Dgems.Parent = GamepassMenu
+Dgems.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+Dgems.BorderColor3 = Color3.fromRGB(32, 31, 33)
+Dgems.Position = UDim2.new(0.421488225, 0, 0.192440152, 0)
+Dgems.Size = UDim2.new(0, 22, 0, 19)
+Dgems.Font = Enum.Font.SourceSans
+Dgems.Text = ""
+Dgems.TextColor3 = Color3.fromRGB(0, 0, 0)
+Dgems.TextSize = 14.000
+
+DClick.Name = "DClick"
+DClick.Parent = GamepassMenu
+DClick.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+DClick.BorderColor3 = Color3.fromRGB(32, 31, 33)
+DClick.Position = UDim2.new(0.421488225, 0, 0.285865754, 0)
+DClick.Size = UDim2.new(0, 22, 0, 19)
+DClick.Font = Enum.Font.SourceSans
+DClick.Text = ""
+DClick.TextColor3 = Color3.fromRGB(0, 0, 0)
+DClick.TextSize = 14.000
+
+DLucky.Name = "DLucky"
+DLucky.Parent = GamepassMenu
+DLucky.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+DLucky.BorderColor3 = Color3.fromRGB(32, 31, 33)
+DLucky.Position = UDim2.new(0.421488225, 0, 0.372370958, 0)
+DLucky.Size = UDim2.new(0, 22, 0, 19)
+DLucky.Font = Enum.Font.SourceSans
+DLucky.Text = ""
+DLucky.TextColor3 = Color3.fromRGB(0, 0, 0)
+DLucky.TextSize = 14.000
+
+FastClick.Name = "FastClick"
+FastClick.Parent = GamepassMenu
+FastClick.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+FastClick.BorderColor3 = Color3.fromRGB(32, 31, 33)
+FastClick.Position = UDim2.new(0.421488225, 0, 0.462336332, 0)
+FastClick.Size = UDim2.new(0, 22, 0, 19)
+FastClick.Font = Enum.Font.SourceSans
+FastClick.Text = ""
+FastClick.TextColor3 = Color3.fromRGB(0, 0, 0)
+FastClick.TextSize = 14.000
+
+Dshiny.Name = "Dshiny"
+Dshiny.Parent = GamepassMenu
+Dshiny.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+Dshiny.BorderColor3 = Color3.fromRGB(32, 31, 33)
+Dshiny.Position = UDim2.new(0.421488225, 0, 0.545381308, 0)
+Dshiny.Size = UDim2.new(0, 22, 0, 19)
+Dshiny.Font = Enum.Font.SourceSans
+Dshiny.Text = ""
+Dshiny.TextColor3 = Color3.fromRGB(0, 0, 0)
+Dshiny.TextSize = 14.000
+
+AutoOpen.Name = "AutoOpen"
+AutoOpen.Parent = GamepassMenu
+AutoOpen.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+AutoOpen.BorderColor3 = Color3.fromRGB(32, 31, 33)
+AutoOpen.Position = UDim2.new(0.421488225, 0, 0.628426313, 0)
+AutoOpen.Size = UDim2.new(0, 22, 0, 19)
+AutoOpen.Font = Enum.Font.SourceSans
+AutoOpen.Text = ""
+AutoOpen.TextColor3 = Color3.fromRGB(0, 0, 0)
+AutoOpen.TextSize = 14.000
+
+Unlockall.Name = "Unlock all"
+Unlockall.Parent = GamepassMenu
+Unlockall.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+Unlockall.BorderColor3 = Color3.fromRGB(32, 31, 33)
+Unlockall.Position = UDim2.new(0.317406595, 0, 0.80835712, 0)
+Unlockall.Size = UDim2.new(0, 202, 0, 24)
+Unlockall.Font = Enum.Font.SourceSans
+Unlockall.Text = "Unlock all"
+Unlockall.TextColor3 = Color3.fromRGB(255, 255, 255)
+Unlockall.TextSize = 14.000
+
+Back.Name = "Back"
+Back.Parent = GamepassMenu
+Back.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+Back.Position = UDim2.new(0.0367346928, 0, 0.948096991, 0)
+Back.Size = UDim2.new(0, 35, 0, 14)
+Back.Font = Enum.Font.SourceSans
+Back.Text = "Back"
+Back.TextColor3 = Color3.fromRGB(255, 255, 255)
+Back.TextSize = 14.000
+Back.MouseButton1Down:connect(function()
+    GamepassMenu.Visible = false
+    Main.Visible = true
+end)
+
+RebirthsMenu.Name = "RebirthsMenu"
+RebirthsMenu.Parent = ScreenGui
+RebirthsMenu.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RebirthsMenu.BackgroundTransparency = 1.000
+RebirthsMenu.BorderColor3 = Color3.fromRGB(27, 42, 53)
+RebirthsMenu.Position = UDim2.new(0.296704113, 0, 0.253801167, 0)
+RebirthsMenu.Size = UDim2.new(0, 541, 0, 348)
+RebirthsMenu.Visible = false
+RebirthsMenu.Image = "rbxassetid://3570695787"
+RebirthsMenu.ImageColor3 = Color3.fromRGB(43, 42, 42)
+RebirthsMenu.ScaleType = Enum.ScaleType.Slice
+RebirthsMenu.SliceCenter = Rect.new(100, 100, 100, 100)
+RebirthsMenu.SliceScale = 0.120
+
+
+TextLabel_Roundify_6px_3.Name = "TextLabel_Roundify_6px"
+TextLabel_Roundify_6px_3.Parent = RebirthsMenu
+TextLabel_Roundify_6px_3.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_Roundify_6px_3.BackgroundColor3 = Color3.fromRGB(255, 255, 127)
+TextLabel_Roundify_6px_3.BackgroundTransparency = 1.000
+TextLabel_Roundify_6px_3.Position = UDim2.new(0.490133494, 0, 0.0605536327, 0)
+TextLabel_Roundify_6px_3.Size = UDim2.new(0.851020396, 0, 0.121107265, 0)
+TextLabel_Roundify_6px_3.Image = "rbxassetid://3570695787"
+TextLabel_Roundify_6px_3.ImageColor3 = Color3.fromRGB(255, 251, 117)
+TextLabel_Roundify_6px_3.ScaleType = Enum.ScaleType.Slice
+TextLabel_Roundify_6px_3.SliceCenter = Rect.new(100, 100, 100, 100)
+TextLabel_Roundify_6px_3.SliceScale = 0.060
+
+TextLabel_5.Parent = TextLabel_Roundify_6px_3
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Position = UDim2.new(0.18571429, 0, 0, 0)
+TextLabel_5.Size = UDim2.new(0, 257, 0, 34)
+TextLabel_5.Font = Enum.Font.SciFi
+TextLabel_5.Text = "Sintax X"
+TextLabel_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.TextSize = 14.000
+
+TextLabel_6.Parent = RebirthsMenu
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(43, 42, 42)
+TextLabel_6.Position = UDim2.new(0.295706481, 0, 0.956862748, 0)
+TextLabel_6.Size = UDim2.new(0, 200, 0, 12)
+TextLabel_6.Font = Enum.Font.SourceSans
+TextLabel_6.Text = "Create Qwart"
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextSize = 14.000
+
+RGB_3.Name = "RGB"
+RGB_3.Parent = RebirthsMenu
+RGB_3.BackgroundColor3 = Color3.fromRGB(255, 24, 27)
+RGB_3.Position = UDim2.new(-0.000579890388, 0, 0.920055032, 0)
+RGB_3.Size = UDim2.new(0, 541, 0, 3)
+
+Rebirths1.Name = "Rebirths 1"
+Rebirths1.Parent = RebirthsMenu
+Rebirths1.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+Rebirths1.Position = UDim2.new(-0.0025418154, 0, 0.140888438, 0)
+Rebirths1.Size = UDim2.new(0, 129, 0, 20)
+Rebirths1.Font = Enum.Font.SourceSans
+Rebirths1.Text = "Rebirth 1"
+Rebirths1.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rebirths1.TextSize = 14.000
+
+Rebirths5.Name = "Rebirths 5"
+Rebirths5.Parent = RebirthsMenu
+Rebirths5.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+Rebirths5.Position = UDim2.new(-0.0025418154, 0, 0.216250107, 0)
+Rebirths5.Size = UDim2.new(0, 129, 0, 20)
+Rebirths5.Font = Enum.Font.SourceSans
+Rebirths5.Text = "Rebirth 5"
+Rebirths5.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rebirths5.TextSize = 14.000
+
+Rebirths10.Name = "Rebirths 10"
+Rebirths10.Parent = RebirthsMenu
+Rebirths10.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+Rebirths10.Position = UDim2.new(-0.0025418154, 0, 0.294485241, 0)
+Rebirths10.Size = UDim2.new(0, 129, 0, 20)
+Rebirths10.Font = Enum.Font.SourceSans
+Rebirths10.Text = "Rebirth 10"
+Rebirths10.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rebirths10.TextSize = 14.000
+
+Rebirths50.Name = "Rebirths 50"
+Rebirths50.Parent = RebirthsMenu
+Rebirths50.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+Rebirths50.Position = UDim2.new(-0.0025418154, 0, 0.36984691, 0)
+Rebirths50.Size = UDim2.new(0, 128, 0, 20)
+Rebirths50.Font = Enum.Font.SourceSans
+Rebirths50.Text = "Rebirth 50"
+Rebirths50.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rebirths50.TextSize = 14.000
+
+Rebirths1k.Name = "Rebirths 1k"
+Rebirths1k.Parent = RebirthsMenu
+Rebirths1k.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+Rebirths1k.Position = UDim2.new(-0.00050097343, 0, 0.521156728, 0)
+Rebirths1k.Size = UDim2.new(0, 127, 0, 20)
+Rebirths1k.Font = Enum.Font.SourceSans
+Rebirths1k.Text = "Rebirth 1000"
+Rebirths1k.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rebirths1k.TextSize = 14.000
+
+Rebirths5k.Name = "Rebirths 5k"
+Rebirths5k.Parent = RebirthsMenu
+Rebirths5k.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+Rebirths5k.Position = UDim2.new(-0.00050097343, 0, 0.597223043, 0)
+Rebirths5k.Size = UDim2.new(0, 127, 0, 20)
+Rebirths5k.Font = Enum.Font.SourceSans
+Rebirths5k.Text = "Rebirth 5k"
+Rebirths5k.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rebirths5k.TextSize = 14.000
+
+Rebirths25k.Name = "Rebirths 25k"
+Rebirths25k.Parent = RebirthsMenu
+Rebirths25k.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+Rebirths25k.Position = UDim2.new(-0.00050097343, 0, 0.672584772, 0)
+Rebirths25k.Size = UDim2.new(0, 126, 0, 20)
+Rebirths25k.Font = Enum.Font.SourceSans
+Rebirths25k.Text = "Rebirth 25k"
+Rebirths25k.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rebirths25k.TextSize = 14.000
+
+Rebirths250.Name = "Rebirths 250"
+Rebirths250.Parent = RebirthsMenu
+Rebirths250.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+Rebirths250.Position = UDim2.new(-0.00050097343, 0, 0.445267498, 0)
+Rebirths250.Size = UDim2.new(0, 127, 0, 20)
+Rebirths250.Font = Enum.Font.SourceSans
+Rebirths250.Text = "Rebirth 250"
+Rebirths250.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rebirths250.TextSize = 14.000
+
+Rebirths125k.Name = "Rebirths 125k"
+Rebirths125k.Parent = RebirthsMenu
+Rebirths125k.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+Rebirths125k.Position = UDim2.new(-0.00050097343, 0, 0.752707183, 0)
+Rebirths125k.Size = UDim2.new(0, 127, 0, 20)
+Rebirths125k.Font = Enum.Font.SourceSans
+Rebirths125k.Text = "Rebirth 125k"
+Rebirths125k.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rebirths125k.TextSize = 14.000
+
+Rebirths500k.Name = "Rebirths 500k"
+Rebirths500k.Parent = RebirthsMenu
+Rebirths500k.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+Rebirths500k.Position = UDim2.new(-0.00050097343, 0, 0.828776717, 0)
+Rebirths500k.Size = UDim2.new(0, 127, 0, 20)
+Rebirths500k.Font = Enum.Font.SourceSans
+Rebirths500k.Text = "Rebirth 500k"
+Rebirths500k.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rebirths500k.TextSize = 14.000
+
+Rebirths3M.Name = "Rebirths 3M"
+Rebirths3M.Parent = RebirthsMenu
+Rebirths3M.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+Rebirths3M.Position = UDim2.new(0.265480369, 0, 0.140888438, 0)
+Rebirths3M.Size = UDim2.new(0, 128, 0, 20)
+Rebirths3M.Font = Enum.Font.SourceSans
+Rebirths3M.Text = "Rebirth 3M"
+Rebirths3M.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rebirths3M.TextSize = 14.000
+
+Rebirth35T.Name = "Rebirth 3,5T"
+Rebirth35T.Parent = RebirthsMenu
+Rebirth35T.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+Rebirth35T.Position = UDim2.new(0.522411942, 0, 0.140888438, 0)
+Rebirth35T.Size = UDim2.new(0, 128, 0, 20)
+Rebirth35T.Font = Enum.Font.SourceSans
+Rebirth35T.Text = "Rebirth 3,5T"
+Rebirth35T.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rebirth35T.TextSize = 14.000
+
+Rebirths75Qi.Name = "Rebirths 75Qi"
+Rebirths75Qi.Parent = RebirthsMenu
+Rebirths75Qi.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+Rebirths75Qi.Position = UDim2.new(0.777495146, 0, 0.140888438, 0)
+Rebirths75Qi.Size = UDim2.new(0, 120, 0, 20)
+Rebirths75Qi.Font = Enum.Font.SourceSans
+Rebirths75Qi.Text = "Rebirth 75Qi"
+Rebirths75Qi.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rebirths75Qi.TextSize = 14.000
+
+Rebirths375Qi.Name = "Rebirths 375Qi"
+Rebirths375Qi.Parent = RebirthsMenu
+Rebirths375Qi.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+Rebirths375Qi.Position = UDim2.new(0.777495146, 0, 0.215601087, 0)
+Rebirths375Qi.Size = UDim2.new(0, 120, 0, 20)
+Rebirths375Qi.Font = Enum.Font.SourceSans
+Rebirths375Qi.Text = "Rebirth 375Qi"
+Rebirths375Qi.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rebirths375Qi.TextSize = 14.000
+
+Rebirths15M.Name = "Rebirths 15M"
+Rebirths15M.Parent = RebirthsMenu
+Rebirths15M.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+Rebirths15M.Position = UDim2.new(0.265480369, 0, 0.215601087, 0)
+Rebirths15M.Size = UDim2.new(0, 128, 0, 20)
+Rebirths15M.Font = Enum.Font.SourceSans
+Rebirths15M.Text = "Rebirth 15M"
+Rebirths15M.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rebirths15M.TextSize = 14.000
+
+Rebirths50M.Name = "Rebirths 50M"
+Rebirths50M.Parent = RebirthsMenu
+Rebirths50M.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+Rebirths50M.Position = UDim2.new(0.265480369, 0, 0.29318729, 0)
+Rebirths50M.Size = UDim2.new(0, 128, 0, 20)
+Rebirths50M.Font = Enum.Font.SourceSans
+Rebirths50M.Text = "Rebirth 50M"
+Rebirths50M.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rebirths50M.TextSize = 14.000
+
+Rebirths250M.Name = "Rebirths 250M"
+Rebirths250M.Parent = RebirthsMenu
+Rebirths250M.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+Rebirths250M.Position = UDim2.new(0.265480369, 0, 0.367899925, 0)
+Rebirths250M.Size = UDim2.new(0, 128, 0, 20)
+Rebirths250M.Font = Enum.Font.SourceSans
+Rebirths250M.Text = "Rebirth 250M"
+Rebirths250M.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rebirths250M.TextSize = 14.000
+
+Rebirths1B.Name = "Rebirths 1B"
+Rebirths1B.Parent = RebirthsMenu
+Rebirths1B.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+Rebirths1B.Position = UDim2.new(0.265480369, 0, 0.442612559, 0)
+Rebirths1B.Size = UDim2.new(0, 128, 0, 20)
+Rebirths1B.Font = Enum.Font.SourceSans
+Rebirths1B.Text = "Rebirth 1B"
+Rebirths1B.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rebirths1B.TextSize = 14.000
+
+Rebirths5B.Name = "Rebirths 5B"
+Rebirths5B.Parent = RebirthsMenu
+Rebirths5B.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+Rebirths5B.Position = UDim2.new(0.265480369, 0, 0.520198762, 0)
+Rebirths5B.Size = UDim2.new(0, 128, 0, 20)
+Rebirths5B.Font = Enum.Font.SourceSans
+Rebirths5B.Text = "Rebirth 5B"
+Rebirths5B.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rebirths5B.TextSize = 14.000
+
+Rebirths25B.Name = "Rebirths 25B"
+Rebirths25B.Parent = RebirthsMenu
+Rebirths25B.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+Rebirths25B.Position = UDim2.new(0.265480369, 0, 0.594911397, 0)
+Rebirths25B.Size = UDim2.new(0, 128, 0, 20)
+Rebirths25B.Font = Enum.Font.SourceSans
+Rebirths25B.Text = "Rebirth 25B"
+Rebirths25B.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rebirths25B.TextSize = 14.000
+
+Rebirths50B.Name = "Rebirths 50B"
+Rebirths50B.Parent = RebirthsMenu
+Rebirths50B.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+Rebirths50B.Position = UDim2.new(0.265480369, 0, 0.67249763, 0)
+Rebirths50B.Size = UDim2.new(0, 128, 0, 20)
+Rebirths50B.Font = Enum.Font.SourceSans
+Rebirths50B.Text = "Rebirth 50B"
+Rebirths50B.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rebirths50B.TextSize = 14.000
+
+Rebirths150B.Name = "Rebirths 150B"
+Rebirths150B.Parent = RebirthsMenu
+Rebirths150B.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+Rebirths150B.Position = UDim2.new(0.265480369, 0, 0.750083804, 0)
+Rebirths150B.Size = UDim2.new(0, 128, 0, 20)
+Rebirths150B.Font = Enum.Font.SourceSans
+Rebirths150B.Text = "Rebirth 150B"
+Rebirths150B.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rebirths150B.TextSize = 14.000
+
+Rebirths750B.Name = "Rebirths 750B"
+Rebirths750B.Parent = RebirthsMenu
+Rebirths750B.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+Rebirths750B.Position = UDim2.new(0.265480369, 0, 0.827669978, 0)
+Rebirths750B.Size = UDim2.new(0, 128, 0, 20)
+Rebirths750B.Font = Enum.Font.SourceSans
+Rebirths750B.Text = "Rebirth 750B"
+Rebirths750B.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rebirths750B.TextSize = 14.000
+
+Rebirth20T.Name = "Rebirth 20T"
+Rebirth20T.Parent = RebirthsMenu
+Rebirth20T.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+Rebirth20T.Position = UDim2.new(0.522411942, 0, 0.215601087, 0)
+Rebirth20T.Size = UDim2.new(0, 128, 0, 20)
+Rebirth20T.Font = Enum.Font.SourceSans
+Rebirth20T.Text = "Rebirth 20T"
+Rebirth20T.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rebirth20T.TextSize = 14.000
+
+Rebirth100T.Name = "Rebirth 100T"
+Rebirth100T.Parent = RebirthsMenu
+Rebirth100T.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+Rebirth100T.Position = UDim2.new(0.522411942, 0, 0.29318729, 0)
+Rebirth100T.Size = UDim2.new(0, 128, 0, 20)
+Rebirth100T.Font = Enum.Font.SourceSans
+Rebirth100T.Text = "Rebirth 100T"
+Rebirth100T.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rebirth100T.TextSize = 14.000
+
+Rebirth500T.Name = "Rebirth 500T"
+Rebirth500T.Parent = RebirthsMenu
+Rebirth500T.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+Rebirth500T.Position = UDim2.new(0.522411942, 0, 0.367899925, 0)
+Rebirth500T.Size = UDim2.new(0, 128, 0, 20)
+Rebirth500T.Font = Enum.Font.SourceSans
+Rebirth500T.Text = "Rebirth 500T"
+Rebirth500T.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rebirth500T.TextSize = 14.000
+
+Rebirth25Qa.Name = "Rebirth 2,5Qa"
+Rebirth25Qa.Parent = RebirthsMenu
+Rebirth25Qa.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+Rebirth25Qa.Position = UDim2.new(0.522411942, 0, 0.442612559, 0)
+Rebirth25Qa.Size = UDim2.new(0, 128, 0, 20)
+Rebirth25Qa.Font = Enum.Font.SourceSans
+Rebirth25Qa.Text = "Rebirth 2,5Qa"
+Rebirth25Qa.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rebirth25Qa.TextSize = 14.000
+
+Rebirth15Qa.Name = "Rebirth 15Qa"
+Rebirth15Qa.Parent = RebirthsMenu
+Rebirth15Qa.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+Rebirth15Qa.Position = UDim2.new(0.522411942, 0, 0.520198762, 0)
+Rebirth15Qa.Size = UDim2.new(0, 128, 0, 20)
+Rebirth15Qa.Font = Enum.Font.SourceSans
+Rebirth15Qa.Text = "Rebirth 15Qa"
+Rebirth15Qa.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rebirth15Qa.TextSize = 14.000
+
+Rebirth75Qa.Name = "Rebirth 75Qa"
+Rebirth75Qa.Parent = RebirthsMenu
+Rebirth75Qa.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+Rebirth75Qa.Position = UDim2.new(0.522411942, 0, 0.594911397, 0)
+Rebirth75Qa.Size = UDim2.new(0, 128, 0, 20)
+Rebirth75Qa.Font = Enum.Font.SourceSans
+Rebirth75Qa.Text = "Rebirth 75Qa"
+Rebirth75Qa.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rebirth75Qa.TextSize = 14.000
+
+Rebirth375Qa.Name = "Rebirth 375Qa"
+Rebirth375Qa.Parent = RebirthsMenu
+Rebirth375Qa.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+Rebirth375Qa.Position = UDim2.new(0.522411942, 0, 0.67249763, 0)
+Rebirth375Qa.Size = UDim2.new(0, 128, 0, 20)
+Rebirth375Qa.Font = Enum.Font.SourceSans
+Rebirth375Qa.Text = "Rebirth 375Qa"
+Rebirth375Qa.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rebirth375Qa.TextSize = 14.000
+
+Rebirth25Qi.Name = "Rebirth 2,5Qi"
+Rebirth25Qi.Parent = RebirthsMenu
+Rebirth25Qi.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+Rebirth25Qi.Position = UDim2.new(0.522411942, 0, 0.750083804, 0)
+Rebirth25Qi.Size = UDim2.new(0, 128, 0, 20)
+Rebirth25Qi.Font = Enum.Font.SourceSans
+Rebirth25Qi.Text = "Rebirth 2,5Qi"
+Rebirth25Qi.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rebirth25Qi.TextSize = 14.000
+
+Rebirth15Qi.Name = "Rebirth 15Qi"
+Rebirth15Qi.Parent = RebirthsMenu
+Rebirth15Qi.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+Rebirth15Qi.Position = UDim2.new(0.522411942, 0, 0.827670038, 0)
+Rebirth15Qi.Size = UDim2.new(0, 128, 0, 20)
+Rebirth15Qi.Font = Enum.Font.SourceSans
+Rebirth15Qi.Text = "Rebirth 15Qi"
+Rebirth15Qi.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rebirth15Qi.TextSize = 14.000
+
+Back_2.Name = "Back"
+Back_2.Parent = RebirthsMenu
+Back_2.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+Back_2.Position = UDim2.new(0.0367346928, 0, 0.948096991, 0)
+Back_2.Size = UDim2.new(0, 35, 0, 14)
+Back_2.Font = Enum.Font.SourceSans
+Back_2.Text = "Back"
+Back_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Back_2.TextSize = 14.000
+Back_2.MouseButton1Down:connect(function()
+    RebirthsMenu.Visible = false
+    Main.Visible = true
+end)
+
+MiscMenu.Name = "MiscMenu"
+MiscMenu.Parent = ScreenGui
+MiscMenu.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MiscMenu.BackgroundTransparency = 1.000
+MiscMenu.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MiscMenu.Position = UDim2.new(0.326322198, 0, 0.263157934, 0)
+MiscMenu.Size = UDim2.new(0, 490, 0, 289)
+MiscMenu.Visible = false
+MiscMenu.Image = "rbxassetid://3570695787"
+MiscMenu.ImageColor3 = Color3.fromRGB(43, 42, 42)
+MiscMenu.ScaleType = Enum.ScaleType.Slice
+MiscMenu.SliceCenter = Rect.new(100, 100, 100, 100)
+MiscMenu.SliceScale = 0.120
+
+TextLabel_Roundify_6px_4.Name = "TextLabel_Roundify_6px"
+TextLabel_Roundify_6px_4.Parent = MiscMenu
+TextLabel_Roundify_6px_4.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_Roundify_6px_4.BackgroundColor3 = Color3.fromRGB(255, 255, 127)
+TextLabel_Roundify_6px_4.BackgroundTransparency = 1.000
+TextLabel_Roundify_6px_4.Position = UDim2.new(0.490133494, 0, 0.0605536327, 0)
+TextLabel_Roundify_6px_4.Size = UDim2.new(0.851020396, 0, 0.121107265, 0)
+TextLabel_Roundify_6px_4.Image = "rbxassetid://3570695787"
+TextLabel_Roundify_6px_4.ImageColor3 = Color3.fromRGB(255, 251, 117)
+TextLabel_Roundify_6px_4.ScaleType = Enum.ScaleType.Slice
+TextLabel_Roundify_6px_4.SliceCenter = Rect.new(100, 100, 100, 100)
+TextLabel_Roundify_6px_4.SliceScale = 0.060
+
+TextLabel_7.Parent = TextLabel_Roundify_6px_4
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.BorderSizePixel = 0
+TextLabel_7.Position = UDim2.new(0.18571429, 0, 0, 0)
+TextLabel_7.Size = UDim2.new(0, 257, 0, 34)
+TextLabel_7.Font = Enum.Font.SciFi
+TextLabel_7.Text = "Sintax X"
+TextLabel_7.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_7.TextSize = 14.000
+
+TextLabel_8.Parent = MiscMenu
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(43, 42, 42)
+TextLabel_8.Position = UDim2.new(0.295706481, 0, 0.956862748, 0)
+TextLabel_8.Size = UDim2.new(0, 200, 0, 12)
+TextLabel_8.Font = Enum.Font.SourceSans
+TextLabel_8.Text = "Create Qwart"
+TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.TextSize = 14.000
+
+RGB_4.Name = "RGB"
+RGB_4.Parent = MiscMenu
+RGB_4.BackgroundColor3 = Color3.fromRGB(255, 24, 27)
+RGB_4.Position = UDim2.new(-0.000579958549, 0, 0.920055032, 0)
+RGB_4.Size = UDim2.new(0, 489, 0, 3)
+
+Back_3.Name = "Back"
+Back_3.Parent = MiscMenu
+Back_3.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+Back_3.Position = UDim2.new(0.0367346928, 0, 0.948096991, 0)
+Back_3.Size = UDim2.new(0, 35, 0, 14)
+Back_3.Font = Enum.Font.SourceSans
+Back_3.Text = "Back"
+Back_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Back_3.TextSize = 14.000
+Back_3.MouseButton1Down:connect(function()
+    MiscMenu.Visible = false
+    RebirthsMenu.Visible = false
+    GamepassMenu.Visible = false
+    Main.Visible = true
+end)
+
+ScrollingFrame.Parent = MiscMenu
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+ScrollingFrame.Position = UDim2.new(0.364175111, 0, 0.167291984, 0)
+ScrollingFrame.Size = UDim2.new(0, 100, 0, 195)
+ScrollingFrame.Visible = false
+
+SkyIsland.Name = "Sky Island"
+SkyIsland.Parent = ScrollingFrame
+SkyIsland.BackgroundColor3 = Color3.fromRGB(191, 191, 191)
+SkyIsland.Size = UDim2.new(0, 88, 0, 26)
+SkyIsland.Font = Enum.Font.SourceSans
+SkyIsland.Text = "Sky Island"
+SkyIsland.TextColor3 = Color3.fromRGB(0, 0, 0)
+SkyIsland.TextSize = 14.000
+
+IceIsland.Name = "Ice Island"
+IceIsland.Parent = ScrollingFrame
+IceIsland.BackgroundColor3 = Color3.fromRGB(191, 191, 191)
+IceIsland.BorderColor3 = Color3.fromRGB(0, 53, 15)
+IceIsland.Position = UDim2.new(0, 0, 0.0449826978, 0)
+IceIsland.Size = UDim2.new(0, 88, 0, 26)
+IceIsland.Font = Enum.Font.SourceSans
+IceIsland.Text = "Ice Island"
+IceIsland.TextColor3 = Color3.fromRGB(0, 0, 0)
+IceIsland.TextSize = 14.000
+
+LavaIsland.Name = "Lava Island"
+LavaIsland.Parent = ScrollingFrame
+LavaIsland.BackgroundColor3 = Color3.fromRGB(191, 191, 191)
+LavaIsland.Position = UDim2.new(0, 0, 0.0899653956, 0)
+LavaIsland.Size = UDim2.new(0, 88, 0, 26)
+LavaIsland.Font = Enum.Font.SourceSans
+LavaIsland.Text = "Lava Island"
+LavaIsland.TextColor3 = Color3.fromRGB(0, 0, 0)
+LavaIsland.TextSize = 14.000
+
+PirateIsland.Name = "Pirate Island"
+PirateIsland.Parent = ScrollingFrame
+PirateIsland.BackgroundColor3 = Color3.fromRGB(191, 191, 191)
+PirateIsland.Position = UDim2.new(0, 0, 0.136678204, 0)
+PirateIsland.Size = UDim2.new(0, 88, 0, 26)
+PirateIsland.Font = Enum.Font.SourceSans
+PirateIsland.Text = "Pirate Island"
+PirateIsland.TextColor3 = Color3.fromRGB(0, 0, 0)
+PirateIsland.TextSize = 14.000
+
+SpaceIsland.Name = "Space Island"
+SpaceIsland.Parent = ScrollingFrame
+SpaceIsland.BackgroundColor3 = Color3.fromRGB(191, 191, 191)
+SpaceIsland.Position = UDim2.new(0, 0, 0.181660905, 0)
+SpaceIsland.Size = UDim2.new(0, 88, 0, 26)
+SpaceIsland.Font = Enum.Font.SourceSans
+SpaceIsland.Text = "Space Island"
+SpaceIsland.TextColor3 = Color3.fromRGB(0, 0, 0)
+SpaceIsland.TextSize = 14.000
+
+ForestIsland.Name = "Forest Island"
+ForestIsland.Parent = ScrollingFrame
+ForestIsland.BackgroundColor3 = Color3.fromRGB(191, 191, 191)
+ForestIsland.Position = UDim2.new(0, 0, 0.226643607, 0)
+ForestIsland.Size = UDim2.new(0, 88, 0, 26)
+ForestIsland.Font = Enum.Font.SourceSans
+ForestIsland.Text = "Forest Island"
+ForestIsland.TextColor3 = Color3.fromRGB(0, 0, 0)
+ForestIsland.TextSize = 14.000
+
+CandyLandIsland.Name = "CandyLand Island"
+CandyLandIsland.Parent = ScrollingFrame
+CandyLandIsland.BackgroundColor3 = Color3.fromRGB(191, 191, 191)
+CandyLandIsland.Position = UDim2.new(0, 0, 0.271626294, 0)
+CandyLandIsland.Size = UDim2.new(0, 88, 0, 26)
+CandyLandIsland.Font = Enum.Font.SourceSans
+CandyLandIsland.Text = "CandyLand Island"
+CandyLandIsland.TextColor3 = Color3.fromRGB(0, 0, 0)
+CandyLandIsland.TextSize = 14.000
+
+AtlantisIsland.Name = "Atlantis Island"
+AtlantisIsland.Parent = ScrollingFrame
+AtlantisIsland.BackgroundColor3 = Color3.fromRGB(191, 191, 191)
+AtlantisIsland.Position = UDim2.new(0, 0, 0.316608995, 0)
+AtlantisIsland.Size = UDim2.new(0, 88, 0, 26)
+AtlantisIsland.Font = Enum.Font.SourceSans
+AtlantisIsland.Text = "Atlantis Island"
+AtlantisIsland.TextColor3 = Color3.fromRGB(0, 0, 0)
+AtlantisIsland.TextSize = 14.000
+
+TropicalIsland.Name = "Tropical Island"
+TropicalIsland.Parent = ScrollingFrame
+TropicalIsland.BackgroundColor3 = Color3.fromRGB(191, 191, 191)
+TropicalIsland.Position = UDim2.new(0, 0, 0.361591697, 0)
+TropicalIsland.Size = UDim2.new(0, 88, 0, 26)
+TropicalIsland.Font = Enum.Font.SourceSans
+TropicalIsland.Text = "Tropical Island"
+TropicalIsland.TextColor3 = Color3.fromRGB(0, 0, 0)
+TropicalIsland.TextSize = 14.000
+
+BeeIsland.Name = "Bee Island"
+BeeIsland.Parent = ScrollingFrame
+BeeIsland.BackgroundColor3 = Color3.fromRGB(191, 191, 191)
+BeeIsland.Position = UDim2.new(0, 0, 0.406574398, 0)
+BeeIsland.Size = UDim2.new(0, 88, 0, 26)
+BeeIsland.Font = Enum.Font.SourceSans
+BeeIsland.Text = "Bee Island"
+BeeIsland.TextColor3 = Color3.fromRGB(0, 0, 0)
+BeeIsland.TextSize = 14.000
+
+GalaxyIsland.Name = "Galaxy Island"
+GalaxyIsland.Parent = ScrollingFrame
+GalaxyIsland.BackgroundColor3 = Color3.fromRGB(191, 191, 191)
+GalaxyIsland.Position = UDim2.new(0, 0, 0.4515571, 0)
+GalaxyIsland.Size = UDim2.new(0, 88, 0, 26)
+GalaxyIsland.Font = Enum.Font.SourceSans
+GalaxyIsland.Text = "Galaxy Island"
+GalaxyIsland.TextColor3 = Color3.fromRGB(0, 0, 0)
+GalaxyIsland.TextSize = 14.000
+
+UneversalIsland.Name = "Uneversal Island"
+UneversalIsland.Parent = ScrollingFrame
+UneversalIsland.BackgroundColor3 = Color3.fromRGB(191, 191, 191)
+UneversalIsland.Position = UDim2.new(0, 0, 0.496539801, 0)
+UneversalIsland.Size = UDim2.new(0, 88, 0, 26)
+UneversalIsland.Font = Enum.Font.SourceSans
+UneversalIsland.Text = "Uneversal Island"
+UneversalIsland.TextColor3 = Color3.fromRGB(0, 0, 0)
+UneversalIsland.TextSize = 14.000
+
+RobotIsland.Name = "Robot Island"
+RobotIsland.Parent = ScrollingFrame
+RobotIsland.BackgroundColor3 = Color3.fromRGB(191, 191, 191)
+RobotIsland.Position = UDim2.new(0, 0, 0.539792418, 0)
+RobotIsland.Size = UDim2.new(0, 88, 0, 26)
+RobotIsland.Font = Enum.Font.SourceSans
+RobotIsland.Text = "Robot Island"
+RobotIsland.TextColor3 = Color3.fromRGB(0, 0, 0)
+RobotIsland.TextSize = 14.000
+
+ChemicalIsland.Name = "Chemical Island"
+ChemicalIsland.Parent = ScrollingFrame
+ChemicalIsland.BackgroundColor3 = Color3.fromRGB(191, 191, 191)
+ChemicalIsland.Position = UDim2.new(-0.00999999978, 0, 0.586505234, 0)
+ChemicalIsland.Size = UDim2.new(0, 88, 0, 26)
+ChemicalIsland.Font = Enum.Font.SourceSans
+ChemicalIsland.Text = "Chemical Island"
+ChemicalIsland.TextColor3 = Color3.fromRGB(0, 0, 0)
+ChemicalIsland.TextSize = 14.000
+
+SteampunkIsland.Name = "Steampunk Island"
+SteampunkIsland.Parent = ScrollingFrame
+SteampunkIsland.BackgroundColor3 = Color3.fromRGB(191, 191, 191)
+SteampunkIsland.Position = UDim2.new(0, 0, 0.629757822, 0)
+SteampunkIsland.Size = UDim2.new(0, 88, 0, 26)
+SteampunkIsland.Font = Enum.Font.SourceSans
+SteampunkIsland.Text = "Steampunk Island"
+SteampunkIsland.TextColor3 = Color3.fromRGB(0, 0, 0)
+SteampunkIsland.TextSize = 14.000
+
+HolographicIsland.Name = "Holographic Island"
+HolographicIsland.Parent = ScrollingFrame
+HolographicIsland.BackgroundColor3 = Color3.fromRGB(191, 191, 191)
+HolographicIsland.Position = UDim2.new(0.00999999978, 0, 0.671280324, 0)
+HolographicIsland.Size = UDim2.new(0, 88, 0, 26)
+HolographicIsland.Font = Enum.Font.SourceSans
+HolographicIsland.Text = "Holographic Island"
+HolographicIsland.TextColor3 = Color3.fromRGB(0, 0, 0)
+HolographicIsland.TextSize = 14.000
+
+TpIsland.Name = "Tp Island"
+TpIsland.Parent = MiscMenu
+TpIsland.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+TpIsland.Position = UDim2.new(-0.000828767195, 0, 0.155895516, 0)
+TpIsland.Size = UDim2.new(0, 170, 0, 32)
+TpIsland.Font = Enum.Font.SourceSans
+TpIsland.Text = "Tp island"
+TpIsland.TextColor3 = Color3.fromRGB(255, 255, 255)
+TpIsland.TextSize = 14.000
+
+Allisland.Name = "All island "
+Allisland.Parent = MiscMenu
+Allisland.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+Allisland.Position = UDim2.new(-0.000828767195, 0, 0.30468443, 0)
+Allisland.Size = UDim2.new(0, 170, 0, 32)
+Allisland.Font = Enum.Font.SourceSans
+Allisland.Text = "Ulock all island "
+Allisland.TextColor3 = Color3.fromRGB(255, 255, 255)
+Allisland.TextSize = 14.000
+
+OpenBank.Name = "Open Bank"
+OpenBank.Parent = MiscMenu
+OpenBank.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+OpenBank.Position = UDim2.new(-0.000828767195, 0, 0.443092734, 0)
+OpenBank.Size = UDim2.new(0, 170, 0, 32)
+OpenBank.Font = Enum.Font.SourceSans
+OpenBank.Text = "Open Bank"
+OpenBank.TextColor3 = Color3.fromRGB(255, 255, 255)
+OpenBank.TextSize = 14.000
+
+Openpotions.Name = "Open potions"
+Openpotions.Parent = MiscMenu
+Openpotions.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+Openpotions.Position = UDim2.new(-0.000828767195, 0, 0.581501007, 0)
+Openpotions.Size = UDim2.new(0, 170, 0, 32)
+Openpotions.Font = Enum.Font.SourceSans
+Openpotions.Text = "Open Potions"
+Openpotions.TextColor3 = Color3.fromRGB(255, 255, 255)
+Openpotions.TextSize = 14.000
+
+infJump.Name = "inf Jump"
+infJump.Parent = MiscMenu
+infJump.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+infJump.Position = UDim2.new(0.595089614, 0, 0.28046295, 0)
+infJump.Size = UDim2.new(0, 170, 0, 32)
+infJump.Font = Enum.Font.SourceSans
+infJump.Text = "Inf Jump"
+infJump.TextColor3 = Color3.fromRGB(255, 255, 255)
+infJump.TextSize = 14.000
+
+AutoCliker.Name = "AutoCliker"
+AutoCliker.Parent = MiscMenu
+AutoCliker.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+AutoCliker.Position = UDim2.new(0.596203864, 0, 0.178599328, 0)
+AutoCliker.Size = UDim2.new(0, 142, 0, 18)
+AutoCliker.Font = Enum.Font.SourceSans
+AutoCliker.Text = "AutoCliker"
+AutoCliker.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoCliker.TextSize = 14.000
+
+AutoCliker_2.Name = "AutoCliker"
+AutoCliker_2.Parent = MiscMenu
+AutoCliker_2.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+AutoCliker_2.BorderColor3 = Color3.fromRGB(32, 31, 33)
+AutoCliker_2.Position = UDim2.new(0.903120935, 0, 0.175139084, 0)
+AutoCliker_2.Size = UDim2.new(0, 22, 0, 19)
+AutoCliker_2.Font = Enum.Font.SourceSans
+AutoCliker_2.Text = ""
+AutoCliker_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+AutoCliker_2.TextSize = 14.000
+
+Claimallrewards.Name = "Claim all rewards"
+Claimallrewards.Parent = MiscMenu
+Claimallrewards.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+Claimallrewards.Position = UDim2.new(-0.000828767195, 0, 0.730289936, 0)
+Claimallrewards.Size = UDim2.new(0, 170, 0, 32)
+Claimallrewards.Font = Enum.Font.SourceSans
+Claimallrewards.Text = "Claim all rewards"
+Claimallrewards.TextColor3 = Color3.fromRGB(255, 255, 255)
+Claimallrewards.TextSize = 14.000
+
+AutoCollectgift.Name = "AutoCollect gift"
+AutoCollectgift.Parent = MiscMenu
+AutoCollectgift.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+AutoCollectgift.Position = UDim2.new(0.596203864, 0, 0.413893461, 0)
+AutoCollectgift.Size = UDim2.new(0, 142, 0, 18)
+AutoCollectgift.Font = Enum.Font.SourceSans
+AutoCollectgift.Text = "AutoCollect gift"
+AutoCollectgift.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoCollectgift.TextSize = 14.000
+
+AutoCollectgift_2.Name = "AutoCollect gift"
+AutoCollectgift_2.Parent = MiscMenu
+AutoCollectgift_2.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+AutoCollectgift_2.BorderColor3 = Color3.fromRGB(32, 31, 33)
+AutoCollectgift_2.Position = UDim2.new(0.903120935, 0, 0.413893402, 0)
+AutoCollectgift_2.Size = UDim2.new(0, 22, 0, 19)
+AutoCollectgift_2.Font = Enum.Font.SourceSans
+AutoCollectgift_2.Text = ""
+AutoCollectgift_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+AutoCollectgift_2.TextSize = 14.000
+
+AntiAFK.Name = "Anti AFK"
+AntiAFK.Parent = MiscMenu
+AntiAFK.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+AntiAFK.Position = UDim2.new(0.593048811, 0, 0.505376518, 0)
+AntiAFK.Size = UDim2.new(0, 170, 0, 32)
+AntiAFK.Font = Enum.Font.SourceSans
+AntiAFK.Text = "Anti AFK"
+AntiAFK.TextColor3 = Color3.fromRGB(255, 255, 255)
+AntiAFK.TextSize = 14.000
+
 -- Scripts:
- 
-local function YJMXOD_fake_script() -- ScreenGui.Script 
+
+local function OPIESP_fake_script() -- RGB.d 
+    local script = Instance.new('Script', RGB)
+
+    function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+    
+    counter = 0
+    
+    while wait(0.1)do
+        script.Parent.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1)
+    
+        counter = counter + 0.01
+    end
+end
+coroutine.wrap(OPIESP_fake_script)()
+local function PPIX_fake_script() -- ScreenGui.Main 
     local script = Instance.new('Script', ScreenGui)
- 
+
     
     frame = script.Parent.Main
     frame.Draggable = true
     frame.Active = true
     frame.Selectable = true
 end
-coroutine.wrap(YJMXOD_fake_script)()
- while wait(5) do
-    local Event = game:GetService("ReplicatedStorage").Events.Client.collectGifts
-Event:FireServer()
+coroutine.wrap(PPIX_fake_script)()
+local function KSFBNKY_fake_script() -- ScreenGui.Gamepass 
+    local script = Instance.new('Script', ScreenGui)
+
+    frame = script.Parent.Gamepass
+    frame.Draggable = true
+    frame.Active = true
+    frame.Selectable = true
 end
+coroutine.wrap(KSFBNKY_fake_script)()
+local function NPWH_fake_script() -- ScreenGui.Rebirths 
+    local script = Instance.new('Script', ScreenGui)
+
+    frame = script.Parent.Rebirths
+    frame.Draggable = true
+    frame.Active = true
+    frame.Selectable = true
+end
+coroutine.wrap(NPWH_fake_script)()
+local function NAGZGAB_fake_script() -- ScreenGui.Misc 
+    local script = Instance.new('Script', ScreenGui)
+
+    frame = script.Parent.Misc
+    frame.Draggable = true
+    frame.Active = true
+    frame.Selectable = true
+end
+coroutine.wrap(NAGZGAB_fake_script)()
+local function EUBJM_fake_script() -- RGB_2.d 
+    local script = Instance.new('Script', RGB_2)
+
+    function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+    
+    counter = 0
+    
+    while wait(0.1)do
+        script.Parent.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1)
+    
+        counter = counter + 0.01
+    end
+end
+coroutine.wrap(EUBJM_fake_script)()
+local function GLNFIU_fake_script() -- RGB_3.d 
+    local script = Instance.new('Script', RGB_3)
+
+    function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+    
+    counter = 0
+    
+    while wait(0.1)do
+        script.Parent.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1)
+    
+        counter = counter + 0.01
+    end
+end
+coroutine.wrap(GLNFIU_fake_script)()
+local function GQYZ_fake_script() -- RGB_4.d 
+    local script = Instance.new('Script', RGB_4)
+
+    function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+    
+    counter = 0
+    
+    while wait(0.1)do
+        script.Parent.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1)
+    
+        counter = counter + 0.01
+    end
+end
+coroutine.wrap(GQYZ_fake_script)()
+
+
