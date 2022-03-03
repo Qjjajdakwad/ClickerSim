@@ -1,8 +1,3 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
 local ScreenGui = Instance.new("ScreenGui")
 local Main = Instance.new("ImageLabel")
 local TextLabel_Roundify_6px = Instance.new("ImageLabel")
@@ -333,6 +328,7 @@ DoubleClickstext.Text = "DoubleClick Unlock"
 DoubleClickstext.TextColor3 = Color3.fromRGB(255, 255, 255)
 DoubleClickstext.TextSize = 14.000
 
+
 DoubleGemstext.Name = "DoubleGems text"
 DoubleGemstext.Parent = GamepassMenu
 DoubleGemstext.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
@@ -393,6 +389,14 @@ Dgems.Font = Enum.Font.SourceSans
 Dgems.Text = ""
 Dgems.TextColor3 = Color3.fromRGB(0, 0, 0)
 Dgems.TextSize = 14.000
+Dgems.MouseButton1Down:connect(function()
+if game:GetService("Players").LocalPlayer.Boosts.DoubleGems.isActive.Value == false
+    then game:GetService("Players").LocalPlayer.Boosts.DoubleGems.isActive.Value = true
+       Dgems.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+   else game:GetService("Players").LocalPlayer.Boosts.DoubleGems.isActive.Value = false
+    Dgems.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+end
+end)
 
 DClick.Name = "DClick"
 DClick.Parent = GamepassMenu
@@ -404,6 +408,14 @@ DClick.Font = Enum.Font.SourceSans
 DClick.Text = ""
 DClick.TextColor3 = Color3.fromRGB(0, 0, 0)
 DClick.TextSize = 14.000
+DClick.MouseButton1Down:connect(function()
+if game:GetService("Players").LocalPlayer.Boosts.DoubleClicks.isActive.Value == false
+    then game:GetService("Players").LocalPlayer.Boosts.DoubleClicks.isActive.Value = true
+       DClick.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+   else game:GetService("Players").LocalPlayer.Boosts.DoubleClicks.isActive.Value = false
+    DClick.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+end
+end)
 
 DLucky.Name = "DLucky"
 DLucky.Parent = GamepassMenu
@@ -415,6 +427,15 @@ DLucky.Font = Enum.Font.SourceSans
 DLucky.Text = ""
 DLucky.TextColor3 = Color3.fromRGB(0, 0, 0)
 DLucky.TextSize = 14.000
+DLucky.MouseButton1Down:connect(function()
+if game:GetService("Players").LocalPlayer.Boosts.DoubleLuck.isActive.Value == false
+    then game:GetService("Players").LocalPlayer.Boosts.DoubleLuck.isActive.Value = true
+       DLucky.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+   else game:GetService("Players").LocalPlayer.Boosts.DoubleLuck.isActive.Value = false
+    DLucky.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+end
+end)
+
 
 FastClick.Name = "FastClick"
 FastClick.Parent = GamepassMenu
@@ -426,6 +447,14 @@ FastClick.Font = Enum.Font.SourceSans
 FastClick.Text = ""
 FastClick.TextColor3 = Color3.fromRGB(0, 0, 0)
 FastClick.TextSize = 14.000
+FastClick.MouseButton1Down:connect(function()
+if game:GetService("Players").LocalPlayer.Boosts.AutoClick.isActive.Value == false
+    then game:GetService("Players").LocalPlayer.Boosts.AutoClick.isActive.Value = true
+       FastClick.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+   else game:GetService("Players").LocalPlayer.Boosts.AutoClick.isActive.Value = false
+    FastClick.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+end
+end)
 
 Dshiny.Name = "Dshiny"
 Dshiny.Parent = GamepassMenu
@@ -437,6 +466,15 @@ Dshiny.Font = Enum.Font.SourceSans
 Dshiny.Text = ""
 Dshiny.TextColor3 = Color3.fromRGB(0, 0, 0)
 Dshiny.TextSize = 14.000
+Dshiny.MouseButton1Down:connect(function()
+if game:GetService("Players").LocalPlayer.Boosts.DoubleShiny.isActive.Value == false
+    then game:GetService("Players").LocalPlayer.Boosts.DoubleShiny.isActive.Value = true
+       Dshiny.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+   else game:GetService("Players").LocalPlayer.Boosts.DoubleShiny.isActive.Value = false
+    Dshiny.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+end
+end)
+
 
 AutoOpen.Name = "AutoOpen"
 AutoOpen.Parent = GamepassMenu
@@ -448,6 +486,14 @@ AutoOpen.Font = Enum.Font.SourceSans
 AutoOpen.Text = ""
 AutoOpen.TextColor3 = Color3.fromRGB(0, 0, 0)
 AutoOpen.TextSize = 14.000
+AutoOpen.MouseButton1Down:connect(function()
+if game:GetService("Players").LocalPlayer.Boosts.freeAutoHatchBoost.isActive.Value == false
+    then game:GetService("Players").LocalPlayer.Boosts.freeAutoHatchBoost.isActive.Value = true
+       AutoOpen.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+   else game:GetService("Players").LocalPlayer.Boosts.freeAutoHatchBoost.isActive.Value = false
+    AutoOpen.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+end
+end)
 
 Unlockall.Name = "Unlock all"
 Unlockall.Parent = GamepassMenu
@@ -459,6 +505,14 @@ Unlockall.Font = Enum.Font.SourceSans
 Unlockall.Text = "Unlock all"
 Unlockall.TextColor3 = Color3.fromRGB(255, 255, 255)
 Unlockall.TextSize = 14.000
+Unlockall.MouseButton1Down:connect(function()
+ for i,v in pairs(game.Players.LocalPlayer.Boosts:GetDescendants()) do
+   if v.Name == "isActive" then
+       v.Value = true
+   end
+end
+end)
+
 
 Back.Name = "Back"
 Back.Parent = GamepassMenu
@@ -1305,5 +1359,3 @@ local function GQYZ_fake_script() -- RGB_4.d
     end
 end
 coroutine.wrap(GQYZ_fake_script)()
-
-
