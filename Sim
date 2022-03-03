@@ -508,7 +508,15 @@ Unlockall.TextSize = 14.000
 Unlockall.MouseButton1Down:connect(function()
  for i,v in pairs(game.Players.LocalPlayer.Boosts:GetDescendants()) do
    if v.Name == "isActive" then
-       v.Value = true
+       if v.Value == false 
+        then v.Value = true
+        Unlockall.TextColor3 = Color3.fromRGB(0, 0, 0)
+        Unlockall.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+        else v.Value = false
+          Unlockall.TextColor3 = Color3.fromRGB(255, 255, 255)
+        Unlockall.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+        
+        end
    end
 end
 end)
@@ -1161,6 +1169,16 @@ TpIsland.Font = Enum.Font.SourceSans
 TpIsland.Text = "Tp island"
 TpIsland.TextColor3 = Color3.fromRGB(255, 255, 255)
 TpIsland.TextSize = 14.000
+TpIsland.MouseButton1Down:connect(function()
+if ScrollingFrame.Visible == false 
+then  ScrollingFrame.Visible = true
+    TpIsland.TextColor3 = Color3.fromRGB(0, 0, 0)
+    TpIsland.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+else  ScrollingFrame.Visible = false
+    TpIsland.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+    TpIsland.TextColor3 = Color3.fromRGB(255, 255, 255)
+end
+end)
 
 Allisland.Name = "All island "
 Allisland.Parent = MiscMenu
@@ -1359,3 +1377,4 @@ local function GQYZ_fake_script() -- RGB_4.d
     end
 end
 coroutine.wrap(GQYZ_fake_script)()
+
